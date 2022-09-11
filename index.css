@@ -1,0 +1,95 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 550px;
+    height: 900px;
+    border: 5px black solid;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    padding: 5px;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    /* border: 1px purple solid; */
+    height: 50px;
+}
+
+/*CARD INFO*/
+#card .dog-img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    justify-content: center;
+    width: 100%;
+}
+#main-container{
+    margin-top: 5px;
+    display: flex;
+    background: grey;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 750px;
+}
+#card {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.dog-info {
+    position: absolute;
+    color: white;
+    bottom: 15px;
+    left: 10px;
+}
+#liked{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 15px;
+    transform: rotate(-35deg);
+    opacity: 1;
+    width: 150px;
+    height: 75px;
+}
+#nope{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 360px;
+    transform: rotate(35deg);
+    opacity: 1;
+    width: 150px;
+    height: 75px;
+}
+
+
+/* BUTTONS */
+#accept-button,
+#reject-button{
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    border: none
+}
+#accept-button:hover{
+    background: #DBFFF4;
+}
+#reject-button:hover{
+    background: #FFE7EF;
+}
+#reject-button:focus{
+    display: none;
+}
+#reject-button:focus{
+    display: none;
+}
+#actions{
+    display: flex;
+    justify-content: center;    
+}
