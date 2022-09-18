@@ -2,6 +2,7 @@
 import dogs from './data.js'
 import Dog from './Dog.js'
 
+let uselessVariable = 0
 let dogIndex = 0
 let currentDog = new Dog(dogs[dogIndex])
 
